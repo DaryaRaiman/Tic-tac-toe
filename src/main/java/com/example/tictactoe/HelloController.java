@@ -18,6 +18,8 @@ public class HelloController {
     @FXML
     private Button menuFlashCardsButton;
 
+    @FXML
+    private Button GameButton1;
 
     @FXML
     void initialize() {
@@ -55,5 +57,23 @@ public class HelloController {
         Stage stage = new Stage();
         stage.setScene(new Scene(root));
         stage.showAndWait();
+    }
+
+    @FXML
+    private void ClickGameButton1(ActionEvent ev2) {
+        GameButton1.getScene().getWindow().hide();
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("MainMenu.fxml"));
+        try {
+            loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        Parent root = loader.getRoot();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.showAndWait();
+
     }
 }

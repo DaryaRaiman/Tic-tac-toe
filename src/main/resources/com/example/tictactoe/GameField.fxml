@@ -1,13 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="920.0" style="-fx-background-color: #9400D3;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="920.0" style="-fx-background-color: #9400D3;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tictactoe.HelloController">
    <children>
-      <AnchorPane layoutX="312.0" layoutY="100.0" prefHeight="572.0" prefWidth="18.0" style="-fx-background-color: #FFFFFF;" />
-      <AnchorPane layoutX="157.0" layoutY="266.0" prefHeight="18.0" prefWidth="572.0" style="-fx-background-color: #FFFFFF;" />
-      <AnchorPane layoutX="541.0" layoutY="100.0" prefHeight="572.0" prefWidth="18.0" style="-fx-background-color: #FFFFFF;" />
-      <AnchorPane layoutX="157.0" layoutY="494.0" prefHeight="18.0" prefWidth="572.0" style="-fx-background-color: #FFFFFF;" />
+      <AnchorPane layoutX="328.0" layoutY="110.0" prefHeight="550.0" prefWidth="18.0" style="-fx-background-color: #FFFFFF;" />
+      <AnchorPane layoutX="157.0" layoutY="282.0" prefHeight="18.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF;" />
+      <AnchorPane layoutX="517.0" layoutY="110.0" prefHeight="550.0" prefWidth="18.0" style="-fx-background-color: #FFFFFF;" />
+      <AnchorPane layoutX="157.0" layoutY="471.0" prefHeight="18.0" prefWidth="549.0" style="-fx-background-color: #FFFFFF;" />
+      <Button fx:id="GameButton1" layoutX="157.0" layoutY="111.0" mnemonicParsing="false" onAction="#ClickGameButton1" prefHeight="170.0" prefWidth="170.0" text="Button0">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/user/Desktop/Фото/Без%20имени-1.jpg" />
+               </source>
+            </ImageInput>
+         </effect></Button>
+      <Button layoutX="535.0" layoutY="111.0" mnemonicParsing="false" prefHeight="170.0" prefWidth="170.0" text="button2" visible="false" />
+      <Button fx:id="GameButton11" layoutX="157.0" layoutY="300.0" mnemonicParsing="false" onAction="#ClickGameButton1" prefHeight="170.0" prefWidth="170.0" text="Button3">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/user/Desktop/Фото/Без%20имени-1.jpg" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="GameButton12" layoutX="346.0" layoutY="111.0" mnemonicParsing="false" onAction="#ClickGameButton1" prefHeight="170.0" prefWidth="170.0" text="Button1">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/user/Desktop/Фото/Без%20имени-1.jpg" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="GameButton121" layoutX="347.0" layoutY="300.0" mnemonicParsing="false" onAction="#ClickGameButton1" prefHeight="170.0" prefWidth="170.0" text="Button4">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/user/Desktop/Фото/Без%20имени-1.jpg" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="GameButton122" layoutX="535.0" layoutY="300.0" mnemonicParsing="false" onAction="#ClickGameButton1" prefHeight="170.0" prefWidth="170.0" text="Button5">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/user/Desktop/Фото/Без%20имени-1.jpg" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="GameButton123" layoutX="347.0" layoutY="489.0" mnemonicParsing="false" onAction="#ClickGameButton1" prefHeight="170.0" prefWidth="170.0" text="Button7">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/user/Desktop/Фото/Без%20имени-1.jpg" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="GameButton124" layoutX="157.0" layoutY="489.0" mnemonicParsing="false" onAction="#ClickGameButton1" prefHeight="170.0" prefWidth="170.0" text="Button6">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/user/Desktop/Фото/Без%20имени-1.jpg" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button fx:id="GameButton125" layoutX="535.0" layoutY="489.0" mnemonicParsing="false" onAction="#ClickGameButton1" prefHeight="170.0" prefWidth="170.0" text="Button8">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/user/Desktop/Фото/Без%20имени-1.jpg" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
    </children>
+   <cursor>
+      <Cursor fx:constant="SE_RESIZE" />
+   </cursor>
+   <effect>
+      <Blend />
+   </effect>
 </AnchorPane>
