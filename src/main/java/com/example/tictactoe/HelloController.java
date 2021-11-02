@@ -39,4 +39,21 @@ public class HelloController {
         stage.setScene(new Scene(root));
         stage.showAndWait();
     }
+
+    @FXML
+    private void clickButton2(ActionEvent ev1){
+        menuFlashCardsButton.getScene().getWindow().hide();
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("GameField.fxml"));
+        try {
+            loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        Parent root = loader.getRoot();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.showAndWait();
+    }
 }

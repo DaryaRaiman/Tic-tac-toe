@@ -16,7 +16,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <Button layoutX="65.0" layoutY="358.0" mnemonicParsing="false" text="ОДИНОЧНАЯ">
+      <Button layoutX="65.0" fx:id="menuFlashCardsButton" onAction="#clickButton2" layoutY="358.0" mnemonicParsing="false" text="ОДИНОЧНАЯ">
          <font>
             <Font size="37.0" />
          </font>
